@@ -17,10 +17,9 @@ end
 
 def word_substituter(tweet)
   tweet_array = tweet.split(" ")
-  new_array = []
   
   dictionary.each do |word, substitute|
-    if word = word
+    if tweet_array
       word
     end
   end
