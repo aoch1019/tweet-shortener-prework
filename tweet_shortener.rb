@@ -20,9 +20,10 @@ def word_substituter(tweet)
   new_array = []
   
   tweet_array.collect do |word|
-    if dictionary.keys.include?(word) || dictionary.keys.include?(word.downcase)
-    elseif dictionary.keys.include?(word.downcase)
+    if dictionary.keys.include?(word)
       new_array.push(dictionary[word])
+    elsif dictionary.keys.include?(word.downcase)
+      new_array.push(dictionary[word.downcase])
     else
       new_array.push(word)
     end
