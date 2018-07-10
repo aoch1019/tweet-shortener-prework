@@ -21,9 +21,12 @@ def word_substituter(tweet)
   
   tweet_array.collect do |word|
     if dictionary.keys.include?(word)
-       dictionary[word]
+      new_array.push(dictionary[word])
+    else
+      new_array.push(word)
     end
   end
+  return new_array
 end
 
 def bulk_tweet_shortener(array_of_tweets)
