@@ -11,8 +11,14 @@ def dictionary
   'you' => 'u',
   "at" => "@", 
   "and" => "&"}
+  
+  return dictionary_hash
 end
 
 def word_substituter(tweet)
+  tweet_array = tweet.split(" ")
+  new_array = []
   
+  tweet_array.each do |word|
+    if 
 end
