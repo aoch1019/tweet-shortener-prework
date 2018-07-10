@@ -20,5 +20,8 @@ def word_substituter(tweet)
   new_array = []
   
   tweet_array.each do |word|
-    if 
+    if word = word
+      word
+    end
+  end
 end
