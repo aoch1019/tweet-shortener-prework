@@ -22,6 +22,7 @@ def word_substituter(tweet)
   tweet_array.collect do |word|
     if dictionary.keys.include?(word)
       new_array.push(dictionary[word])
+    elseif dictionary.keys.include?(word.)
     else
       new_array.push(word)
     end
