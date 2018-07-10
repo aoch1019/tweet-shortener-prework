@@ -20,7 +20,7 @@ def word_substituter(tweet)
   
   dictionary.each do |word, substitute|
     if tweet_array.include?(word)
-      tweet_array[]
+      tweet_array[tweet_array.index(word)] = substitute
     end
   end
 end
